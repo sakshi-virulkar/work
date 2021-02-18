@@ -1,0 +1,567 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+#cloudy{
+    width: 25%;
+    height: 100%;
+    background-color: white;
+    border-right: 2px solid rgb(228, 228, 228);
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px; 
+}
+
+#title h1{
+    font-size: 32px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+#title i{
+    color: blueviolet;
+    font-size: 40px;
+    margin-left: -10px;
+}
+
+#options{
+    width: 100%;
+    height: 300px;
+}
+
+#options .opt{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 23%;
+    color: rgba(128, 128, 128, 0.822);
+    font-size: 18px;
+    margin:0px 90px;
+}
+
+.opt i{
+    margin-right: 20px;
+}
+
+#help{
+    width: 100%;
+    height: 160px;
+}
+
+#help .extra{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    font-size: 18px;
+    color: grey;
+    margin:0px 90px;
+
+}
+.extra i{
+    margin-right: 20px;
+}
+
+
+#profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 99px;
+    background-color: rgb(228, 228, 228);
+
+}
+
+#pic{
+    width: 50px;
+    height: 50px;
+    background-image: url(https://images.unsplash.com/photo-1515019512855-1464f21e9eb8?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px 2px rgb(187, 187, 187);
+}
+
+#name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 120px;
+    height: 50px;
+}
+
+#name p{
+    font-size: 12px;
+    color: grey;
+}
+
+#name h2{
+    font-size: 15px;
+}
+
+
+/* ************main section************ */
+
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 58%;
+    height: 100%;
+    background-color: white;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 0px 40px;
+}
+
+#navhead h2{
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+#navhead p{
+    font-size: 12px;
+    color: rgb(206, 205, 205);
+    
+}
+
+#search i{
+    font-size: 13px;
+    color: rgb(185, 185, 185)
+    margin-left: -40px;
+    margin-right: 20px;
+ }
+#search input{
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(184, 184, 184);
+    color: rgb(236, 236, 236);
+    font-family: 'Montserrat';
+   
+}
+
+
+
+#data{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    
+}
+
+#img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    height: 90%;
+    background-color: rgb(255, 248, 227);
+    border-radius: 20px;
+    box-shadow: 0 4px 6px 1px rgb(231, 231, 231);
+
+}
+
+#img #imagepic{
+    width: 75%;
+    height: 50%;
+    background-image: url(https://images.unsplash.com/photo-1531684096782-1af8c28ddb95?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px 1px rgb(231, 231, 231);
+
+}
+
+#det{
+    width: 75%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+#filename{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+    height: 100%;
+    margin-top: -5px;
+    
+}
+
+#others{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    height: 90%;
+    
+}
+
+#doc{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+    background-color: rgba(255, 242, 242, 0.925);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px 1px rgb(231, 231, 231);
+    padding: 10px 0px;
+}
+
+#docpic{
+    width: 30%;
+    height: 85%;
+    border-radius: 12px;
+    background-image: url(https://images.unsplash.com/photo-1544396821-4dd40b938ad3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 6px 1px rgb(231, 231, 231);
+}
+#docdet{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50% ;
+    height: 85%;
+}
+
+#item{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 54%;
+   
+}
+
+#media{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+    height: 100%;
+    background-color: rgb(241, 236, 229);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px 1px rgb(231, 231, 231);
+    padding: 15px 0px;
+}
+
+#mediapic{
+    width: 70px;
+    height: 60px;
+    background-image: url(https://images.unsplash.com/photo-1534961165765-5c9795af911b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=651&q=80);
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 6px 1px rgb(231, 231, 231);
+
+}
+
+#oth{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+    height: 100%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px 1px rgb(231, 231, 231);
+    padding: 15px 0px;
+}
+
+#othpic{
+    width: 70px;
+    height: 60px;
+    background-image: url(https://images.unsplash.com/photo-1581492129911-5eb1fb620f67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=315&q=80);
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 6px 1px rgb(231, 231, 231);
+}
+
+
+
+#status{
+    display: flex;
+    width: 100%;
+    height: 250px;
+}
+
+#ups{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    height: 250px;
+}
+
+#upnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    padding:0px 35px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#secnav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    padding: 0 20px;
+
+}
+
+#secnav button {
+    width: auto;
+    height: 25px;
+    margin-left: 15px;
+    padding:0px 10px;
+    background-color: rgb(248, 224, 193);
+    border: 1px solid  rgb(197, 112, 51);
+    border-radius: 15px;
+    color: rgb(187, 85, 13);
+    font-size: 12px;
+    
+}
+
+#vids{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+}
+
+.part{
+    width: 42%;
+    height: 100%;
+    
+}
+
+.vid{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+
+.vidpic{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px 1px rgb(231, 231, 231);
+}
+
+.viddet{
+    font-size: 12px;
+}
+
+
+
+#task{
+    width: 40%;
+    height: 250px;
+   
+}
+
+#tasknav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    padding:0px 35px;
+    font-size: 18px;
+    font-weight: 600;
+}
+#tab{
+    width: 90%;
+    height: 205px;
+}
+
+.tabs{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+    font-size: 12px;
+}
+.tabs input{
+    margin-right: 10px;
+}
+
+
+
+
+
+
+/* *************right side*******************/
+
+#storage{
+    width: 22%;
+    height: 100%;
+    background-color: white;
+    border-left: 2px solid rgb(228, 228, 228);
+}
+
+#icon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    color: black;
+    font-size: 25px;
+    background-color: rgb(228, 228, 228);
+}
+
+#scale{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 220px;
+    margin-top: 15px;
+
+}
+#scale h5{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+#graph{
+    width: 200px;
+    height: 113px;
+    background-image: url(https://cdn.impactinit.com/cdn/x/x@09b6578480/smss52/smsimg30/pv/isignstockcontributors/iss_22696_01197.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#scale h6 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: -10px;
+   }
+   
+   #scale p{
+       font-size: 12px;
+       color: grey;
+   }
+   
+
+
+
+
+
+#tags{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 280px;
+    margin-top: 20px;
+}
+
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    height: 55px;
+    background-color: grey;
+    border-radius: 15px;
+    padding: 8px;
+    box-shadow: 0 4px 6px 1px rgb(231, 231, 231);
+}
+.store{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.symbol{
+    width: 52px;
+    height: 40px;
+    background-color: red;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 6px 1px rgb(231, 231, 231);
+}
+
+.file{
+    font-size: 12px;
+    letter-spacing: -1px;
+    margin-left: 10px;
+}
+
+.memory{
+    font-size: 12px;
+    letter-spacing: -1px;
+    font-weight: 600;
+    color: indigo;
+}
+
+#storage button{
+    margin-top: 19px; 
+    margin-left: 40px;
+    width: 180px;
+    height: 35px;
+    background-color: indigo;
+    border: none;
+    border-radius: 100px;
+    color: white;
+    box-shadow: 0 4px 6px 1px rgb(231, 231, 231);
+}
